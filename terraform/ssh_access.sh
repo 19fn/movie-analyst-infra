@@ -29,12 +29,14 @@ if [ -f ${ips} ]; then
 	rm -f ${ips}
 fi
 
-echo -ne "\n[>] Downloading data ..."
+echo
+echo -ne "[>] Updating data ..."
 rg=$(tf_resource_group)
 tf_key > ${key} && chmod 400 ${key}
 tf_ip > ${ips}
 ip=$(cat ${ips} | cut -d'"' -f2)
 ssh_connect="ssh -i ${key} ${user}@${ip}"
+echo $ssh_connect | xclip -selection clipboard
 echo
 echo "[+] RESOURCE GROUP: ${rg}"
 echo "[+] ID_RSA: '${PWD}/id_rsa'"

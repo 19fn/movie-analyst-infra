@@ -31,6 +31,3 @@ jobs:
     - name: Terraform apply
       working-directory: terraform/
       run: terraform apply -auto-approve
-    - name:
-      working-directory: terraform/
-      run: bash data.sh

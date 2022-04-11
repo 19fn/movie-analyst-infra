@@ -2,5 +2,7 @@
 .env
 
 # Terraform
+terraform/id_rsa
+terraform/ips
 terraform/.terraform
 terraform/.terraform.lock.hcl
