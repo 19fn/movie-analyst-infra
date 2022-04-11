@@ -1,2 +1,2 @@
 # movie-analyst-infra
-Infrastructure
+Movie Analyst Infrastructure
